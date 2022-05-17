@@ -1,0 +1,11 @@
+{% extends "mainapp/index.html" }
+{% block content %}
+<ul>
+   <p>{{newData}}</p>
+   {% for dat in data %}
+   <li>{{dat}}</li>
+   {% empty %}
+   <li>No data added</li>
+   {% endfor %}
+</ul>
+{% endblock content %}
